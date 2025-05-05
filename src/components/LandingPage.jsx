@@ -5,7 +5,6 @@ import GridAssets from './GridAssets'
 const LandingPage = () => {
     return (
         <>
-            <Navbar />
             <div className="container">
                 <Hero />
             </div>

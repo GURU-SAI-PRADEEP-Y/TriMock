@@ -2,7 +2,7 @@ import React from 'react'
 import hood from '../assets/Hoodie.png'
 import hoodie from '../assets/HoodieImg.png'
 import cap from '../assets/Cap.png'
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 
 const GridAssets = () => {
@@ -13,36 +13,38 @@ const GridAssets = () => {
                 <p>Choose one of the assets below to make your design on</p>
                 {/* row1 */}
                 <div className="row py-3">
-                    <div className="col card" style={{ width: "7rem" }}>
-                        {/* <Link to="/canva" target='_blank'><img src={hood} alt="Hoodie" /></Link> */}
-                        <img src={hood} alt="Hoodie" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hood} alt="Hoodie" /></Link>
                     </div>
-                    <div className="col card " style={{ width: "7rem" }}>
-                        <img src={hoodie} alt="Hoodie" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hoodie} alt="Hoodie" /></Link>
                     </div>
-                    <div className="col card " style={{ width: "7rem" }}>
-                        <img src={cap} alt="Hoodie" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={cap} alt="Hoodie" /></Link>
                     </div>
                 </div>
                 {/* row2 */}
                 <div className="row py-3">
-                    <div className="col card" style={{ width: "7rem" }}>
-                        <img src={cap} alt="Cap" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hoodie} alt="Hoodie" /></Link>
                     </div>
-                    <div className="col card " style={{ width: "7rem" }}>
-                        <img src={hood} alt="hood" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={cap} alt="Hoodie" /></Link>
                     </div>
-                    <div className="col card " style={{ width: "7rem" }}>
-                        <img src={hoodie} alt="Hoodie" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hood} alt="Hoodie" /></Link>
                     </div>
                 </div>
                 {/* row3 */}
                 <div className="row py-3">
-                    <div className="col card" style={{ width: "7rem" }}>
-                        <img src={hood} alt="Hoodie" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={cap} alt="Hoodie" /></Link>
                     </div>
-                    <div className="col card " style={{ width: "7rem" }}>
-                        <img src={cap} alt="Cap" />
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hoodie} alt="Hoodie" /></Link>
+                    </div>
+                    <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hood} alt="Hoodie" /></Link>
                     </div>
                 </div>
 
