@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg py-3">
             <div className="container">
                 <a className="navbar-brand" href="#">
-                    <img src={Logo} alt="Logo" height="50" />
+                    <img src={Logo} alt="Logo" height="30" />
                 </a>
 
                 <button
