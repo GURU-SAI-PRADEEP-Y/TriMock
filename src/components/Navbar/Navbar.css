@@ -1,0 +1,87 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #5c5fff;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #5c5fff;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .login-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link:hover {
+    color: #5c5fff;
+    text-decoration: none;
+  }
+  
+  .btn-upgrade {
+    background-color: #5c5fff;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .btn-upgrade:hover {
+    background-color: #4a4ad9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(92, 95, 255, 0.3);
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav {
+      margin: 15px 0;
+    }
+    
+    .nav-link {
+      margin: 5px 0;
+    }
+    
+    .d-flex {
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+    
+    .login-link {
+      margin-bottom: 10px;
+    }
+  }

@@ -1,12 +1,26 @@
-import { Canvas } from "@react-three/fiber";
-import { Experience } from "./components/Experience";
+import Navbar from "./components/Navbar/Navbar";
+import GridAssets from "./components/GridAssets";
+import Hero from "./components/Hero/Hero";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+// import LandingPage from "./components/LandingPage";
+import Canva from "./components/Canva";
+
 
 function App() {
   return (
-    <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
-      <color attach="background" args={["#ececec"]} />
-      <Experience />
-    </Canvas>
+    <>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Hero />
+        </div>
+        <GridAssets />
+        <Routes>
+          {/* <Route path="/#" element={<LandingPage />} /> */}
+          <Route path="/canva" element={<Canva />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
