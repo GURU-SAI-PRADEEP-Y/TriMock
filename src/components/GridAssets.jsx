@@ -2,9 +2,10 @@ import React from 'react'
 import tshirt from '../assets/TShirt.png'
 import hoodie from '../assets/Hoodie.png'
 import cap from '../assets/Cap.png'
-import bottle from '../assets/Bottle.png'
+// import bottle from '../assets/Bottle.png'
 import jacket from '../assets/Jacket.png'
 import mug from '../assets/Mug.png'
+import sweatShirt from '../assets/Sweatshirt.png'
 import shorts from '../assets/Shorts.png'
 import { Link } from "react-router-dom";
 
@@ -42,7 +43,7 @@ const GridAssets = () => {
                 {/* row3 */}
                 <div className="row py-3">
                     <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
-                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={tshirt} alt="Tshirt" /></Link>
+                        <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={sweatShirt} alt="SweatShirt" /></Link>
                     </div>
                     <div className="col card link-no-style bg-transparent border-0" style={{ width: "7rem" }}>
                         <Link to="/canva" target='_blank'><img className="card-img-top img-fluid" src={hoodie} alt="Hoodie" /></Link>

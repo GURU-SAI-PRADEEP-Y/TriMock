@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import heroImg from '../../assets/HeroImg.png'
 
 const Hero = () => {
     return (
@@ -27,7 +28,7 @@ const Hero = () => {
                     <div className="col-lg-6">
                         <div className="hero-image-container" data-aos="fade-left">
                             <img
-                                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                src={heroImg}
                                 alt="3D T-shirt Mockup"
                                 className="hero-image"
                             />

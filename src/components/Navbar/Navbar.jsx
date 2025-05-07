@@ -1,14 +1,15 @@
 import React from 'react';
 import './Navbar.css';
 import Logo from '../../assets/logo.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg py-3">
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     <img src={Logo} alt="Logo" height="30" />
-                </a>
+                </Link>
 
                 <button
                     className="navbar-toggler"
